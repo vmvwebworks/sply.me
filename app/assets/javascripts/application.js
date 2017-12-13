@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
 //= require rails-ujs
 //= require materialize-sprockets
 //= require turbolinks
@@ -18,6 +20,4 @@
 //= require themes/light
 //= require map
 //= require_tree .
-//= require jquery
-//= require jquery_ujs
 //= require hyperloop-loader
