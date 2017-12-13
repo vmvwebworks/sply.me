@@ -11,5 +11,13 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require materialize-sprockets
 //= require turbolinks
+//= require ammap
+//= require maps/js/worldLow
+//= require themes/light
+//= require map
 //= require_tree .
+//= require jquery
+//= require jquery_ujs
+//= require hyperloop-loader
