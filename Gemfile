@@ -40,6 +40,8 @@ gem 'country_list'
 # my own amchart_maps gem for map chart
 gem 'amchart_maps', path: '../amchart_maps'
 # Use searckick as feature elastiSearch for search engine
+gem 'searchkick'
+# Devise for users registration
 gem 'devise'
 # omniauth for social logins
 gem 'omniauth-google-oauth2'
@@ -54,6 +56,10 @@ gem 'omniauth-google-oauth2'
 group :development, :test do
   # Load ENV variables
   gem 'dotenv-rails'
+  # develop without reloading the frontend
+  gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
+  # automatize starting processes
+  gem 'foreman'
   #ejecución de tests
   gem 'rspec-rails', '~> 3.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
