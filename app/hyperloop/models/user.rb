@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable, :trackable, :omniauthable, :timeoutable, omniauth_providers: [:google_oauth2] unless RUBY_ENGINE == 'opal'
@@ -18,4 +19,5 @@ class User < ApplicationRecord
   def self.current
     Hyperloop::Application.acting_user_id ? find(Hyperloop::Application.acting_user_id) : User.new
   end
+  searchkick
 end

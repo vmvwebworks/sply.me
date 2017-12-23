@@ -1,5 +1,5 @@
 
-  class Helloworld < Hyperloop::Component
+  class UserFilter < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -32,8 +32,8 @@
 
     def render
       DIV do
-        H1 {"Helloworld - #{User.current.email}"}
-        H1 { @holaguapis}
+        "UserFilter"
       end
     end
   end
+

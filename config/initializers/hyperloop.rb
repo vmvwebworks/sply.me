@@ -1,7 +1,9 @@
-# config/initializers/hyperloop.rb
-# If you are not using ActionCable, see http://ruby-hyperloop.io/docs/models/configuring-transport/
-Hyperloop.configuration do |config|
-  config.transport = :action_cable
-  config.import 'reactrb/auto-import'
-end
+#config/initializers/hyperloop.rb
 
+Hyperloop.configuration do |config|
+
+  config.transport = :simple_poller
+
+  config.import 'opal_hot_reloader'
+
+end
