@@ -36,7 +36,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # country list for select
-gem 'country_list'
+gem 'countries'
 # my own amchart_maps gem for map chart
 gem 'amchart_maps', path: '../amchart_maps'
 # Use searckick as feature elastiSearch for search engine
@@ -56,6 +56,7 @@ gem 'omniauth-google-oauth2'
 group :development, :test do
   # Load ENV variables
   gem 'dotenv-rails'
+  gem 'foreman'
   # develop without reloading the frontend
   gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
   # automatize starting processes

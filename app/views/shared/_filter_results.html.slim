@@ -1,15 +1,6 @@
 div id="filter-list"
-  .input-field.col.s6
-    i.material-icons.prefix search
-    input type="text" id="icon_prefix2"
-    label for="icon_prefix2" search by keyword
-  .input-field.col.s6
-    select
-      - @countries.each do |country|
-        option value="#{country.alpha2}" #{country.name}
-    label Elige País
-
-
+  = react_component 'UserFilter'
+  = react_component 'ResultsTable'
   table.striped.highlight
     thead
       tr
@@ -20,7 +11,7 @@ div id="filter-list"
         th available now?
     tbody
       tr
-      
+
 
       tr
         td carl hadsn

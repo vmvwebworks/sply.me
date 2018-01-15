@@ -1,6 +1,5 @@
 
-  class Helloworld < Hyperloop::Component
-
+  class ResultsTable < Hyperloop::Component
     # param :my_param
     # param param_with_default: "default value"
     # param :param_with_default2, default: "default value" # alternative syntax
@@ -13,8 +12,6 @@
     # call backs may also reference an instance method i.e. before_mount :my_method
 
     before_mount do
-      # any initialization particularly of state variables goes here.
-      # this will execute on server (prerendering) and client.
     end
 
     after_mount do
@@ -31,9 +28,10 @@
     end
 
     def render
-      DIV do
-        H1 {"Helloworld - #{User.current.email}"}
-        H1 { @holaguapis}
+      render(UL) do
+        User.all.each do |user|
+          LI { "#{user.name}" }
+        end
       end
     end
   end
