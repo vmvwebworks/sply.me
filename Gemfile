@@ -8,8 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# hyperloop as frontend framework ruby-written React
-gem 'hyperloop'
+source 'https://gems.ruby-hyperloop.org'
+gem 'hyperloop', '1.0.0-lap17'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
@@ -39,8 +39,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'countries'
 # my own amchart_maps gem for map chart
 gem 'amchart_maps', path: '../amchart_maps'
-# Use searckick as feature elastiSearch for search engine
-gem 'searchkick'
 # Devise for users registration
 gem 'devise'
 # omniauth for social logins
@@ -56,7 +54,6 @@ gem 'omniauth-google-oauth2'
 group :development, :test do
   # Load ENV variables
   gem 'dotenv-rails'
-  gem 'foreman'
   # develop without reloading the frontend
   gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
   # automatize starting processes
