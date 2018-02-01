@@ -39,8 +39,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'countries'
 # my own amchart_maps gem for map chart
 gem 'amchart_maps', path: '../amchart_maps'
-# Use searckick as feature elastiSearch for search engine
-gem 'searchkick'
 # Devise for users registration
 gem 'devise'
 # omniauth for social logins
